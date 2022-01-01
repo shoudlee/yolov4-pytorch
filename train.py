@@ -235,7 +235,7 @@ if __name__ == "__main__":
                                     drop_last=True, collate_fn=yolo_dataset_collate)
 
         #------------------------------------#
-        #   冻结一定部分训练
+        #   解冻所有部分训练
         #------------------------------------#
         if Freeze_Train:
             for param in model.backbone.parameters():
